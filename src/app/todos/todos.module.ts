@@ -5,7 +5,10 @@ import {FooterComponent} from './components/footer/footer.component';
 import {MainComponent} from './components/main/main.component';
 import {TodosComponent} from './components/todos/todos.component';
 import {HeaderComponent} from './components/header/header.component';
-import { TodoComponent } from './components/todo/todo.component';
+import {TodoComponent} from './components/todo/todo.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
 
 const routes: Routes = [
   {
@@ -18,7 +21,10 @@ const routes: Routes = [
   declarations: [FooterComponent, MainComponent, TodosComponent, HeaderComponent, TodoComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule
   ],
 })
 export class TodosModule {
