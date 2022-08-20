@@ -5,6 +5,7 @@ import {FooterComponent} from './components/footer/footer.component';
 import {MainComponent} from './components/main/main.component';
 import {TodosComponent} from './components/todos/todos.component';
 import {HeaderComponent} from './components/header/header.component';
+import { TodoComponent } from './components/todo/todo.component';
 
 const routes: Routes = [
   {
@@ -14,7 +15,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [FooterComponent, MainComponent, TodosComponent, HeaderComponent],
+  declarations: [FooterComponent, MainComponent, TodosComponent, HeaderComponent, TodoComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes)
